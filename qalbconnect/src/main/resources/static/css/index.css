@@ -1,0 +1,149 @@
+/* src/main/resources/static/css/index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1d15;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #bfdecc;
+    height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+    width: 50%;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sidebar .logo img {
+    height: 150px;
+    width: 150px;
+}
+
+.sidebar .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebar .image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sidebar .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.main-content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Vertically center the container */
+    padding: 20px;
+    position: relative;
+    left: -20px; /* Slight shift to the left */
+}
+
+.container {
+    background: #0a1d15;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Restored the larger box width */
+    text-align: center;
+    color: #bfdecc;
+    border: 2px solid #bfdecc;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #bfdecc;
+}
+
+p { /* Added for the welcome message text */
+    margin-bottom: 25px;
+}
+
+/* Styles for the new buttons on the index page */
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Space between buttons */
+}
+
+.action-button {
+    width: 100%;
+    padding: 12px; /* Increased button padding */
+    background-color: #007BFF; /* Blue color for action buttons */
+    color: #bfdecc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger button text */
+    text-decoration: none; /* Remove underline for links acting as buttons */
+    display: inline-block; /* Make it behave like a block for full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* General styles that might be reused across pages, adapted from your login.css */
+label { /* Not used on index.html, but good to keep for consistency */
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #bfdecc;
+}
+
+input { /* Not used on index.html, but good to keep for consistency */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bfdecc;
+    border-radius: 5px;
+    background-color: #0a1d15;
+    color: #bfdecc;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #bfdecc;
+}
+
+button { /* General button style, if any direct <button> tags are used */
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #bfdecc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a { /* General link style, overridden by .action-button for buttons */
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

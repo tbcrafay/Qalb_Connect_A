@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QALB CONNECT - Welcome</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}"> </head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img th:src="@{/images/qalbconnectlogo.png}" alt="QALB CONNECT Logo"> <h1>QALB CONNECT</h1>
+        </div>
+        <div class="image">
+            <img th:src="@{/images/featuresimage.jpg}" alt="Islamic Practices"> </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Welcome to QALB CONNECT</h1>
+            <p>Your spiritual companion for daily Islamic practices.</p>
+            <div class="buttons-container">
+                <a th:href="@{/register}" class="action-button">Sign Up</a> 
+                <a th:href="@{/login}" class="action-button">Sign In</a> 
+            </div> 
+        </div>
+    </div>
+    </body>
+</html>
